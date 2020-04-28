@@ -130,6 +130,9 @@ body {
 
  #blackbody {
      background-color: black;
+     opacity: 0.5;
+     
+     
  }
 
  h2.titles {

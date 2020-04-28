@@ -9,9 +9,10 @@ html {
   }
 
 body {
-    /*background-color: black;*/
-    background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(255,255,255,0) 48%,rgba(2,2,2,1) 100%);
+    background-color: transparent;
 }
+
+/*navigator*/
 
   nav {  
     display: flex;
@@ -63,7 +64,7 @@ body {
     margin-right: 0px;  
     margin-top: 0px;  
     }
-
+/*text*/
  #myname {
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -127,14 +128,8 @@ body {
     margin-bottom: 30px;
  }
 
- #blackbody {
+ div.blackbody {
      background-color: black;
-     /*box*/
-    padding-top: 0px;  
-    padding-bottom: 0px;  
-    margin-right: 0px;  
-    margin-left: 0px;  
-    margin-bottom: 0px;
  }
 
  h2.titles {

@@ -305,13 +305,15 @@ body {
     margin-bottom: 20px;
  }
 
+/*timeline*/
+
 .timeline{
     position: relative;
     margin: 50px auto;
     padding: 40px 0;
     width: 1000px;
     /*box*/
-    padding-bottom: 600px;
+    padding-bottom: 1000px;
 }
 .timeline:before{
     content: '';

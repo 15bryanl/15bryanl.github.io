@@ -131,7 +131,7 @@ body {
  #blackbody {
     /*background-color: black; */
     background: linear-gradient(to top, rgba(0, 0, 0, 0) 1%,
-     rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.8) 20%,
+     rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.85) 20%,
      rgba(0, 0, 0, 0.7) 88%, rgba(0, 0, 0, 0) 98%);
      
  }

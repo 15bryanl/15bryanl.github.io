@@ -217,6 +217,34 @@ body {
     margin-right: 30px;  
  }
 
+ div.AMtext3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30px;
+    /*box*/
+    padding-top: 0px;  
+    padding-bottom: 20px;  
+    margin-left: 30px;
+    margin-right: 30px;  
+ }
+
+ #AMtext4 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 30px;
+    text-decoration: none;
+ }
+
+#projects a:hover { 
+    background-color:transparent;
+    color: lightgray;
+    text-decoration: none;
+   }  
+
  div.polaroid {
     max-width: 320px;
     background-color: white;
@@ -341,6 +369,11 @@ body {
     margin-left: 40px;
     margin-right: 40px;
  }
+
+ .projlink {
+     text-decoration: none;
+ }
+
  div.title {
     color: white;
     text-shadow: 3px 3px 4px #3d3c3c;
@@ -358,6 +391,7 @@ body {
 
  img.projectpic {
     max-width: 500px;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: block;
     margin-left: auto;
@@ -366,8 +400,8 @@ body {
     margin-bottom: 20px;
  }
 
- div.projectcap {
-    background-color: rgba(255,255,255,0.8);
+div.projectcap {
+    background-color: rgba(255,255,255,0);
     /*box*/
     padding-top: 20px;
     padding-bottom: 20px;

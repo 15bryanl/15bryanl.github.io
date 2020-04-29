@@ -2,7 +2,7 @@
 <html>
 <head>
     <base href="/">
-    <title>Bryan Li's Website</title>
+    <title>Welcome! I'm Bryan Li</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Angular App">
@@ -16,6 +16,17 @@
 
 </head>
 <body>
+        <nav id="navbar">
+                <!--<a id="logo" href="#">Bryan Li</a>-->
+                <a href="#">HOME</a>
+                <a href="#AM">ABOUT</a>
+                <a href="#projectstitle">PROJECTS</a>
+                <a href="Bryan Li Resume.pdf">RESUME</a>
+                <a href="#timeline">TIMELINE</a>
+                <a href="#cooking">COOKING</a>
+                <a href="#">TRAVEL</a>
+                <a href="#">CONTACT</a>
+            </nav>
     <nav id="navigation" class="fadeInNoMove hidden">
         <!--<a id="logo" href="#">Bryan Li</a>-->
         <a href="#">HOME</a>
@@ -216,6 +227,18 @@
     init();
     checkPosition();
     })();
+    </script>
+
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("navbar").style.top = "0px";
+    } else {
+        document.getElementById("navbar").style.top = "-500px";
+    }
+    }
     </script>
 </body>
 </html>

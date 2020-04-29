@@ -129,6 +129,17 @@ body {
     margin-bottom: 30px;
  }
 
+ #ambox2 {
+    background-color: white;
+    /*box*/
+    padding-top: 20px;  
+    padding-bottom: 30px;  
+    margin-right: 40px;  
+    margin-top: 20px;  
+    margin-left: 40px;  
+    margin-bottom: 30px;
+ }
+
  #blackbody {
     /*background-color: black; */
     background: linear-gradient(to top, rgba(0, 0, 0, 0) 1%,

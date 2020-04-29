@@ -313,8 +313,8 @@ body {
     padding: 40px 0;
     width: 1000px;
     /*box*/
-    padding-bottom: 500px;
-    margin-bottom: 500px;
+    padding-bottom: 900px;
+    margin-bottom: 300px;
 }
 .timeline:before{
     content: '';

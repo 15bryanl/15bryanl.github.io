@@ -381,6 +381,8 @@ body {
 .timeline ul li p{
     margin: 10px 0 0;
     padding: 0;
+    color: white;
+    font-family: Montserrat;
 }
 .timeline ul li .time h4{
     margin: 0;

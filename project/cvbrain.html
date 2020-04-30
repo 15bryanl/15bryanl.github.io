@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+    <title>CV Brain Segmentation</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Angular App">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+          crossorigin="anonymous">
+    <link href="assets/styles.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+        <nav id="navbar">
+                <!--<a id="logo" href="#">Bryan Li</a>-->
+                <a href="#">HOME</a>
+                <a href="#AM">ABOUT</a>
+                <a href="#projectstitle">PROJECTS</a>
+                <a href="Bryan Li Resume.pdf">RESUME</a>
+                <a href="#timeline">TIMELINE</a>
+                <a href="#cooking">COOKING</a>
+                <a href="#">TRAVEL</a>
+                <a href="#">CONTACT</a>
+            </nav>
+    <nav id="navigation">
+        <!--<a id="logo" href="#">Bryan Li</a>-->
+        <a href="#">HOME</a>
+        <a href="#AM">ABOUT</a>
+        <a href="#projectstitle">PROJECTS</a>
+        <a href="Bryan Li Resume.pdf">RESUME</a>
+        <a href="#timeline">TIMELINE</a>
+        <a href="#cooking">COOKING</a>
+        <a href="#">TRAVEL</a>
+        <a href="#">CONTACT</a>
+    </nav>
+    <div id="ambox2">
+            <div class="polaroid">
+                <img src="images/brainscan.jpg" alt="Bryan Portrait" style="width:100%">
+            </div>
+        <h2 id="AM" class="titles" name="AM">Computer Vision Brain Segmentation</h2>
+        <p id="AMtext" style="font-weight:bold">Project Definition, Audience and Scope:</p> 
+        <p id="AMtext">Currently, Convolutional Neural Networks (CNN) have become recognized as a 
+            new efficient method in classification. CNNs have proven to be more effective at image 
+            classification than humans, which has established the use of deep learning in brain imaging. 
+            Thus CNN has rapidly become the choice in improving brain diagnosis, treatment and characterization, 
+            which benefits from accurate segmentation.</p> 
+        <p id="AMtext">For example, the ability to segment and visualize the thalamus 
+            would allow us to determine whether trauma or disfigurement of certain areas of 
+            the thalamus would indicate the possibility of developing certain disorders or syndromes. 
+            One example of spatial specific injury that leads to disorder is trauma to the Anterior 
+            thalamic nucleus, which would lead to the development of anterograde amnesia. While 
+            current methods require us to segment and analyze by hand, our goal is to optimize this 
+            process for faster and more accurate diagnosis.
+        </p>
+        <p id="AMtext" style="font-weight:bold">Our Solution:</p>
+            <div class="polaroid">
+                <img src="images/cvmodel.jpg" alt="Bryan Portrait" style="width:100%">
+            </div>
+            <p id="AMtext">Currently, Convolutional Neural Networks (CNN) have become recognized as a 
+                    new efficient method in classification. CNNs have proven to be more effective at image 
+                    classification than humans, which has established the use of deep learning in brain imaging. 
+                    Thus CNN has rapidly become the choice in improving brain diagnosis, treatment and characterization, 
+                    which benefits from accurate segmentation.</p> 
+        <p id="AMtext" style="font-weight:bold">Product:</p>
+            <p id="AMtext">Our CNN was trained on 10 images and 8 for testing purposes. After training on 10 images, 
+                we obtained a very clear and fluid segmentation and used an ADAM optimization of 0.0001 in our CNN 
+                for highest accuracy. We utilized 5 epochs because less epochs displayed less feature data from the input image 
+                while more epochs had negligible improvement. We were careful not to overfit the data, which 
+                results from training on the same data set repeatedly.
+            </p>
+            <p id="AMtext">Additionally, we varied our CNN by changing the kernel size. Larger kernel size meant 
+                more required memory for weights and more computation time for back-propagation. Smaller kernel 
+                size meant a drop in accuracy. Thus we chose a 3x3x3 kernel, which straddle the two extremes. 
+                Our CNN performed poorly when we experimented with training on all 43 individual structures. Our 
+                filter size provided limited feature detection, which can be an area for improvement. We may 
+                also improve network performance by increasing the number of convolutional layers to deepen 
+                the network, which would boost performance by learning more complex, non-linear behaviors. </p>
+        <p id="AMtext" style="font-weight:bold">Evaluation:</p>
+            <p id="AMtext">we had decided to experiment with a convolutional neural network to accurately segment
+                 subcortical structures in brain MRI image scans. Our tests indicate that our proposed method can 
+                 be an effective and efficient approach at brain segmentation for diagnosis, however, we must 
+                 understand that there are limitations: currently our model cannot detect more structures as 
+                 it had trouble learning more than our seven proposed classes. Also, due to system and memory 
+                 limitations, we couldn’t get more accurate results. However, with better infrastructure, and 
+                 a deeper neural network, segmentation can become more accurate and better optimized.
+            </p>
+    </div>
+    <div id="resumebutton">
+            <div class="button button-1" onclick="window.open('project/final_report.pdf')">See Report</div>
+        </div>
+        <div id="resumebutton">
+                <div class="button button-1" onclick="window.open('project/final_pres.pdf')">See Presentation</div>
+            </div>
+    <!--Scrolling for Nav Bar-->
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("navbar").style.top = "0px";
+    } else {
+        document.getElementById("navbar").style.top = "-500px";
+    }
+    }
+    </script>
+</body>
+</html>

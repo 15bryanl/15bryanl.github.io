@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+    <title>ValuLarm - iOS App and Device</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Angular App">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+          crossorigin="anonymous">
+    <link href="assets/styles.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+        <nav id="navbar">
+                <!--<a id="logo" href="#">Bryan Li</a>-->
+                <a href="#">HOME</a>
+                <a href="#AM">ABOUT</a>
+                <a href="#projectstitle">PROJECTS</a>
+                <a href="Bryan Li Resume.pdf">RESUME</a>
+                <a href="#timeline">TIMELINE</a>
+                <a href="#cooking">COOKING</a>
+                <a href="#">TRAVEL</a>
+                <a href="#">CONTACT</a>
+            </nav>
+    <nav id="navigation">
+        <!--<a id="logo" href="#">Bryan Li</a>-->
+        <a href="#">HOME</a>
+        <a href="#AM">ABOUT</a>
+        <a href="#projectstitle">PROJECTS</a>
+        <a href="Bryan Li Resume.pdf">RESUME</a>
+        <a href="#timeline">TIMELINE</a>
+        <a href="#cooking">COOKING</a>
+        <a href="#">TRAVEL</a>
+        <a href="#">CONTACT</a>
+    </nav>
+    <div id="ambox2">
+            <div class="polaroid">
+                <img src="images/ValuLarm.jpg" alt="Bryan Portrait" style="width:100%">
+            </div>
+        <h2 id="AM" class="titles" name="AM">ValuLarm - iOS App and Device</h2>
+        <p id="AMtext" style="font-weight:bold">Project Definition, Audience and Scope:</p> 
+        <p id="AMtext">In light of modern consumerism, we're consistently becoming overwhelmed
+            by the increase of new material possessions and lose track of old valuable possessions. For parents with young children, keeping track 
+            of everything from your wallet to your child is a stressful and frustrating endeavor.
+            Current valuable trackers on the market fail to be accurate, and can only provide the approximate geographic position of your valuables.
+            We wanted to create a new tracker that can locate your personal things but also keep an eye on your children
+            in an accurate, convenient matter.
+        </p>
+        <p id="AMtext" style="font-weight:bold">Requirements:</p>
+            <div class="polaroid">
+                <img src="images/circuitry.jpg" alt="Bryan Portrait" style="width:100%">
+            </div>
+            <ul id="AMtext">
+                <li>Notify the user if a valuable has left a maximum periferal.</li>
+                <li>Locate the valuable in the periferal.</li>
+                <li>Set of an audible alarm that the valuable has left periferal.</li>
+                <li>Light, compact and easy to carry under a size of a credit card.</li>
+                <li>Durable enough to drop from 1.5 meters.</li>
+                <li>Have a sleek and discreet design.</li>
+                <li>Have a connected interface app on an iPhone 8.</li>
+            </ul>
+        <p id="AMtext" style="font-weight:bold">Product:</p>
+            <p id="AMtext">We created a sleek, credit card sized device that was able to alert the user
+                if their item has left a selected periferal of 5m, 10m, 25m, and 50 meters using RSSI Bluetooth
+                 data and an ACXL attachment. The geolocator attachment for an Adafruit microprocessor allowed us to provide location data for the item to the application. The App was created
+                 in Swift for iOS development and had the ability to log in and register your device personally. From this 
+                 app, users can toggle between different periferal distances and locate their object with ease at the touch of a button.
+            </p>
+            <div class="polaroid">
+                    <img src="images/showcase.jpg" alt="Bryan Portrait" style="width:100%">
+            </div>
+        <p id="AMtext" style="font-weight:bold">Evaluation:</p>
+            <p id="AMtext"> From our research, we tailored specifications with measurable numerics to evaluate our success.
+                In our tests, we saw that users were able to set periferals easily using our UI and that the device would
+                successfully notify the user if their item left the periferal and location data was shown on the interface.
+                The device was able to withstand drops of up to 1.5m and had a durable shell to protect the delicate PCB inside.
+                From our data collection, about 65 out of 70 users said that they liked the device and UI, and would use it in their daily life.
+                With a location and periferal accuracy rate of about 80%, the device and iOS was recognized as a formidable and promising product.
+            </p>
+        <p id="AMtext" style="font-weight:bold">Improvements:</p>
+        <p id="AMtext"> There is always room for improvement with our device and UI. In the future, we would like to 
+            utilize smaller sized adafruit device chips to create an even smaller device, and add a more robust algorithm 
+            to ensure better accuracy around corners and different floors (as a downside to bluetooth tech). With the UI,
+            we would like to implement a sleeker design and possibly try shifting the design to a webapp in JS to expand to
+            Web APIs (for example, Mozilla's Geolocation API) for better accuracy in marking our target's location.
+        </p>
+    </div>
+    <!--Scrolling for Nav Bar-->
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("navbar").style.top = "0px";
+    } else {
+        document.getElementById("navbar").style.top = "-500px";
+    }
+    }
+    </script>
+</body>
+</html>

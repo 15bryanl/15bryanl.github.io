@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+    <title>Gawad Kalinga</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Angular App">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+          crossorigin="anonymous">
+    <link href="assets/styles.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+        <nav id="navbar">
+                <!--<a id="logo" href="#">Bryan Li</a>-->
+                <a href="#">HOME</a>
+                <a href="#AM">ABOUT</a>
+                <a href="#projectstitle">PROJECTS</a>
+                <a href="Bryan Li Resume.pdf">RESUME</a>
+                <a href="#timeline">TIMELINE</a>
+                <a href="#cooking">COOKING</a>
+                <a href="#">TRAVEL</a>
+                <a href="#">CONTACT</a>
+            </nav>
+    <nav id="navigation">
+        <!--<a id="logo" href="#">Bryan Li</a>-->
+        <a href="#">HOME</a>
+        <a href="#AM">ABOUT</a>
+        <a href="#projectstitle">PROJECTS</a>
+        <a href="Bryan Li Resume.pdf">RESUME</a>
+        <a href="#timeline">TIMELINE</a>
+        <a href="#cooking">COOKING</a>
+        <a href="#">TRAVEL</a>
+        <a href="#">CONTACT</a>
+    </nav>
+    <div id="ambox2">
+            <div class="polaroid">
+                <img src="images/states.jpg" alt="Bryan Portrait" style="width:100%">
+            </div>
+        <h2 id="AM" class="titles" name="AM">TheraWack - Physical Therapy for Children</h2>
+        <p id="AMtext" style="font-weight:bold">Project Definition, Audience and Scope:</p> 
+        <p id="AMtext">When children sustain neurological or physical damage to the spinal cord,
+            intense exercise or normal motor control becomes impossible to perform. For young children under 12,
+            sustaining these injuries and going through physical rehabilitation may be uncomfortable and 
+            scary. Focusing physio-therapy exercises into fun games provides a better, kid-friendly alternative
+            to otherwise boring or scary therapy programs.
+        </p>
+        <p id="AMtext" style="font-weight:bold">Requirements:</p>
+            <ul id="AMtext">
+                <li>Be a fun, engaging, simple game.</li>
+                <li>Able to have one and two verses multiplayer.</li>
+                <li>Utilize fun sounds and lights to make game fun and friendly.</li>
+                <li>Remember and keep track of a scoreboard.</li>
+                <li>Induce randomness to game to keep it interesting and varied.</li>
+                <li>Be durable and sustainable.</li>
+            </ul>
+            <div class="polaroid">
+                    <img src="images/Therawack.jpg" alt="Bryan Portrait" style="width:100%">
+                </div>
+        <p id="AMtext" style="font-weight:bold">Product:</p>
+            <p id="AMtext">We developed a product that was akin to whack-a-mole, which helps the child
+                perform a repetitive task that helps foster more accurate motor skills in children with 
+                neurological and physical issues. Made utilizing micro sensors, motors, and an Arduino Uno,
+                we programmed a game that would work almost similarly to an arcade game. You would insert a
+                coin into the game's coin slot and it would bring the user to a start screen with multiple options.
+                This includes 1 player, 2 players, scoreboard, and off. Through C++'s better control over memory management,
+                we programmed the game to save "active games" to start from the same point, saved scores, and to
+                manipulate the motors in a more precise manner. To understand which state led to which state, we needed
+                to create a state machine to make sure that we could cycle through the UI correctly.
+            </p>
+        <p id="AMtext" style="font-weight:bold">Evaluation:</p>
+            <p id="AMtext"> From our research, we tailored specifications with measurable numerics to evaluate our success.
+                In our tests, we saw that children liked the "fun" version of our product verses current equipment used for physical therapy. 
+                The product was able to help children achieve a slightly better recovery time (10% faster) for a timed length trial of ~1 month,
+                as the children would be more willing to practice and train using our product verses the current products available. However,
+                about 80% of children (4 of a group of 5) were happy with our product, with the last stating that they weren't interested in this 
+                game.
+            </p>
+    </div>
+    <div id="resumebutton">
+            <div class="button button-1" onclick="window.open('http://www.gk1world.com/home')">Volunteer for Gawad Kalinga!</div>
+        </div>
+    <!--Scrolling for Nav Bar-->
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("navbar").style.top = "0px";
+    } else {
+        document.getElementById("navbar").style.top = "-500px";
+    }
+    }
+    </script>
+</body>
+</html>

@@ -5,7 +5,7 @@
     <title>Welcome! I'm Bryan Li</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Angular App">
+    <meta name="description" content="My Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
@@ -15,19 +15,32 @@
     <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '', { 'optimize_id': 'OPT-KNC4MBQ'});
+</script>
+
 </head>
 <body>
-        <nav id="navbar">
-                <!--<a id="logo" href="#">Bryan Li</a>-->
-                <a href="#">HOME</a>
-                <a href="#AM">ABOUT</a>
-                <a href="#projectstitle">PROJECTS</a>
-                <a href="Bryan Li Resume.pdf">RESUME</a>
-                <a href="#timeline">TIMELINE</a>
-                <a href="#cooking">COOKING</a>
-                <a href="#">TRAVEL</a>
-                <a href="#">CONTACT</a>
-            </nav>
+        <!-- Navigational Bar Static on top of Homepage -->
+    <nav id="navbar">
+        <!--<a id="logo" href="#">Bryan Li</a>-->
+        <a href="#">HOME</a>
+        <a href="#AM">ABOUT</a>
+        <a href="#projectstitle">PROJECTS</a>
+        <a href="Bryan Li Resume.pdf">RESUME</a>
+        <a href="#timeline">TIMELINE</a>
+        <a href="#cooking">COOKING</a>
+        <a href="#travel">TRAVEL</a>
+        <a href="#">CONTACT</a>
+    </nav>
+
+    <!-- Navigational Bar moveable that follows user -->
     <nav id="navigation" class="fadeInNoMove hidden">
         <!--<a id="logo" href="#">Bryan Li</a>-->
         <a href="#">HOME</a>
@@ -36,11 +49,12 @@
         <a href="Bryan Li Resume.pdf">RESUME</a>
         <a href="#timeline">TIMELINE</a>
         <a href="#cooking">COOKING</a>
-        <a href="#">TRAVEL</a>
+        <a href="#travel">TRAVEL</a>
         <a href="#">CONTACT</a>
     </nav>
 
 <div>
+    <!-- Top Introduction Title, Name, and Resume Button -->
     <p id="myname" class="fadeInAnimated hidden">Bryan P Li</p>
     <p id="mytitle" class="fadeInAnimated hidden">Software Engineer and Product Designer</p>
     <div id="summary" class="fadeInAnimated hidden">
@@ -53,55 +67,79 @@
         <div class="button button-1" onclick="window.open('Bryan Li Resume.pdf')">See My Resume</div>
     </div>
 </div>
-<div>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-</div>
+
 <div id="blackbody">
+
+    <!-- About Me box -->
     <div id="ambox">
             <div class="polaroid">
                 <img src="Bryanportrait.JPG" alt="Bryan Portrait" style="width:100%">
             </div>
         <h2 id="AM" class="titles" name="AM">About Me</h2>
-        <p id="AMtext">I'm a Chinese American born in Manhattan, New York City. Currently, I am an Advanced App Engineer responsible for providing clients with modern, innovative, technological solutions. Currently, I'm working for Accenture for one of their diamond clients in New York City, providing analytical and technical support for three complex API products for over +300 external clients globally. Prior to this, I was at Accenture for a diamond client in the Washington DC Area in Mobile and Web applications development and deliverables providing high tech solutions for consumer issues. </p>
-        <p id="AMtext">I graduated from Johns Hopkins University with a dual degree in Electrical and Computer Engineering and a minor in Computer Science in 2019. In the technical field, I've worked on smaller projects such as artificial intelligence chess playing algorithms, a physical therapy device for physically challenged children, and a valuables tracker bluetooth device at Johns Hopkins. In the summer of 2017, I designed and developed a cancer treatment implant at the Singapore Institute for Neurotechnology with Professor John Ho. </p>
-        <p id="AMtext">Outside of tech and medical technology, I enjoy hip hop and afrobeat dance, as well as cooking and eating food. In both fields, I was the Choreography head and Culinary Chair for Hopkin's Eclectics/SLAM dance teams and the Chinese Students Assocation from 2016-2019 leading both groups and organizing large scale events for the general student body. </p>
+        <p id="AMtext">I'm a Chinese American born in Manhattan, New York City. Currently, 
+            I am an Advanced App Engineer responsible for providing clients with modern, 
+            innovative, technological solutions. Currently, I'm working for Accenture for one 
+            of their diamond clients in New York City, providing analytical and technical 
+            support for three complex API products for over +300 external clients globally. 
+            Prior to this, I was at Accenture for a diamond client in the Washington DC Area 
+            in Mobile and Web applications development and deliverables providing high tech 
+            solutions for consumer issues. 
+        </p>
+        <p id="AMtext">I graduated from Johns Hopkins University with a dual degree in Electrical 
+            and Computer Engineering and a minor in Computer Science in 2019. In the technical 
+            field, I've worked on smaller projects such as artificial intelligence chess playing 
+            algorithms, a physical therapy device for physically challenged children, and a 
+            valuables tracker bluetooth device at Johns Hopkins. In the summer of 2017, I designed 
+            and developed a cancer treatment implant at the Singapore Institute for Neurotechnology 
+            with Professor John Ho. 
+        </p>
+        <p id="AMtext">Outside of tech and medical technology, I enjoy hip hop and afrobeat dance, 
+            as well as cooking and eating food. In both fields, I was the Choreography head and 
+            Culinary Chair for Hopkin's Eclectics/SLAM dance teams and the Chinese Students 
+            Assocation from 2016-2019 leading both groups and organizing large scale events for 
+            the general student body. 
+        </p>
     </div>
-    <div id="projectstitle" class="title fadeInNoMove hidden">Experience and Projects</p></div>
-    <div id="projects">
-        <div id="works-grid" class="grid-container">
-            <div id="project 1" class="item1">
-                <img class="projectpic" src="images/valularm.jpg">
-                <div class="projectcap">
-                        <a id="AMtext4" href="project/valularm.html">ValuLarm<br></a>
-                        <div class="AMtext3">iOS App and Device for Valuables</div>
-                </div>
-            </div>
-            <div id="project 2" class="item2">
-                <img class="projectpic" src="images/Brain Scan.png">
-                <div class="projectcap">
-                    <a id="AMtext4" href="project/cvbrain.html">CV Brain Segmentation<br></a>
-                    <div class="AMtext3">Convolutional Neural Networks Image Classification</div>
-                </div>
-            </div>
-            <div id="project 3" class="item3">
-                <img class="projectpic" src="images/Therawack.jpg">
-                <div class="projectcap">
-                    <a id="AMtext4" href="project/TheraWack.html">TheraWack<br></a>
-                    <div class="AMtext3">Physical Therapy Game for Kids</div>
-                </div>
-            </div>
-            <div id="project 4" class="item4">
-                <img class="projectpic" src="images/Gawad kalinga.jpg">
-                <div class="projectcap">
-                    <a id="AMtext4" href="project/gawadkalinga.html">Gawad Kalinga<br></a>
-                    <div class="AMtext3">Sustainable Living and Regrowth</div>
+
+    <!-- Projects -->
+    <div class="aspectwrapper">
+            <div class="content">
+                <div id="projectstitle" class="title fadeInNoMove hidden">Experience and Projects</p></div>
+                <div id="projects">
+                    <div id="works-grid" class="grid-container">
+                        <div id="project 1" class="item1">
+                            <img class="projectpic" alt="Valularm" src="images/valularm.jpg">
+                            <div class="projectcap">
+                                    <a id="AMtext4" href="project/valularm.html">ValuLarm<br></a>
+                                    <div class="AMtext3">iOS App and Device for Valuables</div>
+                            </div>
+                        </div>
+                        <div id="project 2" class="item2">
+                            <img class="projectpic" alt="CV Neural Networks" src="images/Brain Scan.png">
+                            <div class="projectcap">
+                                <a id="AMtext4" href="project/cvbrain.html">CV Brain Segmentation<br></a>
+                                <div class="AMtext3">Convolutional Neural Networks Image Classification</div>
+                            </div>
+                        </div>
+                        <div id="project 3" class="item3">
+                            <img class="projectpic" alt="Therawack" src="images/Therawack.jpg">
+                            <div class="projectcap">
+                                <a id="AMtext4" href="project/TheraWack.html">TheraWack<br></a>
+                                <div class="AMtext3">Physical Therapy Game for Kids</div>
+                            </div>
+                        </div>
+                        <div id="project 4" class="item4">
+                            <img class="projectpic" alt="animal crossing" src="images/Gawad kalinga.jpg">
+                            <div class="projectcap">
+                                <a id="AMtext4" href="project/animalCross.html">Animal Crossing Tracker<br></a>
+                                <div class="AMtext3">Seasonality Fauna and Museum Tracker</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
     <!--TIMELINE-->
     <div id="timeline" class="title">Timeline</p></div>
         <div class="timeline">
@@ -109,97 +147,180 @@
                 <li>
                     <div class="content">
                         <h3>American Born Chinese</h3>
-                        <p>I was born in Manhattan New York in Chinatown. I lived here for a couple of years and also lived in Princeton Junction, New Jersey for the beginning of my life.</p> 
-                        <p>I consider the US to be my home, and I try to be as "New Yorker" as possible. But considering I haven't really lived there all too long, I sometimes find it hard to say New York is my home. I then moved to Singapore in 2005.</p>
+                        <p>I was born in Manhattan New York in Chinatown. I lived here 
+                            for a couple of years and also lived in Princeton Junction, 
+                            New Jersey for the beginning of my life.
+                        </p> 
+                        <p>I consider the US to be my home, and I try to be as "New Yorker" 
+                            as possible. But considering I haven't really lived there all too 
+                            long, I sometimes find it hard to say New York is my home. 
+                            I then moved to Singapore in 2005.
+                        </p>
                     </div>
                     <div class="time">
                         <h4>1997 - 2004</h4>
                     </div>
                     <div class="photo">
-                        <img src="images/baby.jpg" alt="food 1" style="width:34%">
+                        <img src="images/baby.jpg" alt="baby photo" style="width:34%">
                     </div>
                 </li>
                 <li>
                     <div class="content">
                         <h3>Majulah Singapura!</h3>
-                        <p>I was very reluctant to move to Singapore in the beginning; I was so scared about leaving all the things I considered home. However, I looked forward to a new country, a new experience, and a new life!</p> 
-                        <p>Slowly but surely, I grew to love Singapore and its melting pot of cultures, foods, and people. Singapore became my home and I made some friendships that lasted for years. Little did I know, I'd have to move to Beijing, China.</p>
+                        <p>I was very reluctant to move to Singapore in the beginning; I was 
+                            so scared about leaving all the things I considered home. However, 
+                            I looked forward to a new country, a new experience, and a new life!
+                        </p> 
+                        <p>Slowly but surely, I grew to love Singapore and its melting pot of 
+                            cultures, foods, and people. Singapore became my home and I made 
+                            some friendships that lasted for years. Little did I know, I'd have 
+                            to move to Beijing, China.
+                        </p>
                     </div>
                     <div class="time">
                         <h4>2005 - 2009</h4>
                     </div>
                     <div class="photo">
-                        <img src="images/singapore.jpg" alt="food 1" style="width:28%">
+                        <img src="images/singapore.jpg" alt="Singapore" style="width:28%">
                     </div>
                 </li>
                 <li>
                     <div class="content">
                         <h3>北京我爱你!</h3>
-                        <p>Living in China was a totally new experience. Having to deal with censorship and pollution made it tough to assimilate, but I grew fond of Beijing because it gave me a new love of my own culture and people, as well as great friendships that I made at my High School, The Western Academy of Beijing.</p>
-                        <p>From touring the mountains of 五台山 to the rivers of 桂林市, China was an amazing experience I would never give up.</p>
+                        <p>Living in China was a totally new experience. Having to deal with 
+                            censorship and pollution made it tough to assimilate, but I grew 
+                            fond of Beijing because it gave me a new love of my own culture and 
+                            people, as well as great friendships that I made at my High School, 
+                            The Western Academy of Beijing.
+                        </p>
+                        <p>From touring the mountains of 五台山 to the rivers of 桂林市, China was 
+                            an amazing experience I would never give up.
+                        </p>
                     </div>
                     <div class="time">
                         <h4>2009 - 2015</h4>
                     </div>
                     <div class="photo">
-                            <img src="images/beijing.jpg" alt="food 1" style="width:35%">
+                            <img src="images/beijing.jpg" alt="Beijing" style="width:35%">
                     </div>
                 </li>
                 <li>
                     <div class="content">
                         <h3>Forever a Bluejay!</h3>
-                        <p>I then started my studies of Electrical and Computer Engineering/Comp Sci at the Johns Hopkins University.</p>
-                        <p>I joined student performance groups such as SLAM and the Eclectics, joined a research team to develop cancer treatment implants, and created my own app and device called ValuLarm! I tried soul food for the first time, learned Korean, and made lasting friendships at Hopkins.</p>
+                        <p>I then started my studies of Electrical and Computer Engineering/Comp 
+                            Sci at the Johns Hopkins University.
+                        </p>
+                        <p>I joined student performance groups such as SLAM and the Eclectics, 
+                            joined a research team to develop cancer treatment implants, and 
+                            created my own app and device called ValuLarm! I tried soul food 
+                            for the first time, learned Korean, and made lasting friendships 
+                            at Hopkins.
+                        </p>
                     </div>
                     <div class="time">
                         <h4>2015 - 2019</h4>
                     </div>
                     <div class="photo">
-                            <img src="images/Hop.jpg" alt="food 1" style="width:28%">
+                            <img src="images/Hop.jpg" alt="Hopkins" style="width:28%">
                     </div>
                 </li>
                 <li>
                     <div class="content">
                         <h3>Welcome to New York!</h3>
-                        <p>I then moved back to my hometown in New York! A lot of things have changed but the smells and sights of the city make me excited to be back.</p> 
-                        <p>Currently, I'm working at Accenture for large diamond clients in Manhattan. I hope I can make the best of this experience and make a difference with my work!</p>
+                        <p>I then moved back to my hometown in New York! A lot of things have 
+                            changed but the smells and sights of the city make me excited to 
+                            be back.
+                        </p> 
+                        <p>Currently, I'm working at Accenture for large diamond clients in 
+                            Manhattan. I hope I can make the best of this experience and make 
+                            a difference with my work!
+                        </p>
                     </div>
                     <div class="time">
                         <h4>2019 - Current</h4>
                     </div>
                     <div class="photo">
-                            <img src="images/nyc.jpg" alt="food 1" style="width:28%">
+                            <img src="images/nyc.jpg" alt="NYC" style="width:28%">
                     </div>
                 </li>
                 <style="clear: both;"></style>
             </ul>
         </div>
+
     <!--COOKING-->
     <div id="ambox2">
         <h2 id="cooking" class="titles">Cooking</h2>
         <div class="polaroid-cooking">
                 <img src="images/food 3.jpg" alt="food 1" style="width:100%">
         </div>
-        <p id="AMtext">During my childhood, my mother would try to feed me all these different types of foods and I would hate all of them except for fish porridge. I was such a picky child when I was young, but now I've become a passionate foodie who wants to try cooking and eating everything! Once I joined the Chinese Students Association at Johns Hopkins University, I fell in love with cooking, and survived Baltimore's barren Chinese food landscape by making my own food!</p>
+        <p id="AMtext">During my childhood, my mother would try to feed me all these 
+            different types of foods and I would hate all of them except for fish porridge. 
+            I was such a picky child when I was young, but now I've become a passionate 
+            foodie who wants to try cooking and eating everything! Once I joined the Chinese 
+            Students Association at Johns Hopkins University, I fell in love with cooking, 
+            and survived Baltimore's barren Chinese food landscape by making my own food!
+        </p>
         <div class="polaroid-cooking2">
             <img src="images/food 2.jpg" alt="food 2" style="width:100%">
         </div>
-        <p id="AMtext">I've made a lot of different foods, from finding the right puff pastry for a sweet and nutty baklava, to lugging a whole sushi boat from Japan to make a sashimi/sushi boat platter for my friends. I've even tried my hand at a 6 hour croquembouche that took a lot of love and labor to make an amazing french confectionary dessert.</p>
+        <p id="AMtext">I've made a lot of different foods, from finding the right puff pastry 
+            for a sweet and nutty baklava, to lugging a whole sushi boat from Japan to make a 
+            sashimi/sushi boat platter for my friends. I've even tried my hand at a 6 hour 
+            croquembouche that took a lot of love and labor to make an amazing french confectionary 
+            dessert.
+        </p>
         <div class="polaroid-cooking">
-            <img src="images/food 1.jpg" alt="food 2" style="width:100%">
+            <img src="images/food 1.jpg" alt="food 3" style="width:100%">
         </div>
-        <p id="AMtext">Currently, living in New York pushes me to try more and more foods, as well as trying my hand at different cultural cuisines. I'm currently documenting all my cooking feats at <a href="https://www.instagram.com/cheftenderli/">Chef TenderLi</a> on Instagram! Come take a look, or see more of my cooking <a href-"#">here</a>!</p>
+        <p id="AMtext">Currently, living in New York pushes me to try more and more foods, 
+            as well as trying my hand at different cultural cuisines. I'm currently documenting 
+            all my cooking feats at <a href="https://www.instagram.com/cheftenderli/">Chef TenderLi</a> 
+            on Instagram! Come take a look, or see more of my cooking <a href-"#">here</a>!</p>
         <p id="AMtext">Hope you follow me on my cooking journey!</p>
     </div>
+
+    <!--Traveling-->
+    <div id="ambox2">
+            <h2 id="travel" class="titles">Travel</h2>
+            <div class="polaroid-cooking2">
+                    <img src="images/rocks.jpg" alt="rocks" style="width:100%">
+            </div>
+            <p id="AMtext">From the high tops of Hawaiian volcanoes to the low plains of Mongolia,
+                    I've been traveling and moving houses ever since I was little. I've traveled to many
+                    different countries in Asia, with my favorites being Japan, China and Cambodia.
+                    I think traveling and living in the Asian countries, especially the melting pot
+                     of Singapore and Hong Kong, I've become more open minded and more understanding of
+                     different cultures and different viewpoints.
+            </p>
+            <p id="AMtext">From my travels in Europe, I had a strong culture shock to how people in
+                Europe live their lives. I was able to see how culturally diverse Europe was 
+                and how a lot of countries have their differences, but also had many similarities.
+                This was very prominent in their food, as countries such as Germany, Austria, and the Czech Republic
+                shared their seemingly similar tastes in beer and fried meats. However, countries that are right next
+                to them favor wines, and more delicate tastes, such as Hungary or France.
+            </p>
+            <div class="polaroid-cooking">
+                <img src="images/belgium.jpg" alt="belgium" style="width:100%">
+            </div>
+            <p id="AMtext">Currently, living in New York pushes me to try more and more foods, as well as trying my hand at different cultural cuisines. I'm currently documenting all my cooking feats at <a href="https://www.instagram.com/cheftenderli/">Chef TenderLi</a> on Instagram! Come take a look, or see more of my cooking <a href-"#">here</a>!</p>
+            <p id="AMtext">Hope you follow me on my cooking journey!</p>
+            <div id="works-grid" class="grid-container">
+                    <div id="project 1" class="item1">
+                        <img class="projectpic" alt="Paris" src="images/paris.jpg">
+                        <div class="projectcap">
+                            <div class="AMtext">Traveling to my favorite European City!</div>
+                        </div>
+                    </div>
+                    <div id="project 2" class="item2">
+                        <img class="projectpic" alt="japan" src="images/japan.jpg">
+                        <div class="projectcap">
+                            <div class="AMtext">Solo Backpacking Through Japan (Miyajima)</div>
+                        </div>
+                    </div>
+            </div>
+    </div>
 </div>
-<!--
-    <main class="container">
-        <app-root>
-            Loading... We appreciate your patience!
-        </app-root>
-        <br /><br />
-    </main>
--->
+
     <script src="polyfills.pack.js"></script>
     <script src="main.pack.js"></script>
     <!--Fade In beginning for title screen effect-->
